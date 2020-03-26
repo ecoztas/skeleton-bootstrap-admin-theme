@@ -1,0 +1,40 @@
+#layout-page {
+    width: 100%;
+    display: flex;
+
+    #layout-page-sidebar {
+        min-width: $sidebar-width !important;
+        max-width: $sidebar-width !important;
+        transition: $base-transition;
+        min-height: calc(100vh - #{$navbar-height}) !important;
+        position: relative;
+    }
+
+    #layout-page-content {
+        transition: $base-transition;
+        min-height: calc(100% - #{$navbar-height}) !important;
+        margin: 0;
+        padding-bottom: 6em;
+        width: 100%;
+        display: flex;
+        position: relative;
+    }
+}
+
+#layout-page-sidebar {
+    &.launch {
+        margin-left: - $sidebar-width;
+    }
+}
+
+@media (max-width: $screen-size) {
+    #layout-page-sidebar {
+        margin-left: - $sidebar-width;
+    }
+
+    #layout-page-sidebar {
+        &.launch {
+            margin-left: 0;
+        }
+    }
+}

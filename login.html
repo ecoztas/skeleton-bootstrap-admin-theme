@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <title>Login | Bootsrap Admin Panel</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Style file(s). -->
+    <link rel="stylesheet" href="public/libraries/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="public/libraries/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="public/styles/theme.css"/>
+</head>
+
+<body class="bg-dark">
+
+    <!--/PAGE-->
+    <div class="container">
+        <div class="row mt-lg-5 pb-3">
+            <div class="col offset-md-4 col-md-4">
+                <div class="text-center">
+                    <h1 class="text-white">Admin Panel</h1>
+                </div>
+            </div>
+        </div>
+        <!--/FORM-->
+        <div class="row">
+            <div class="col offset-md-4 col-md-4">
+                <div class="card shadow-lg">
+                    <div class="card-body">
+                        <form method="POST" action="#!">
+                            <label class="text-muted" for="username">User Name</label>
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fa fa-user"></i>
+                                    </span>
+                                </div>
+                                <input type="text" name="username" id="username" class="form-control" autofocus required>
+                            </div>
+                            <label class="text-muted" for="kullanici-sifre">Password</label>
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fa fa-lock"></i>
+                                    </span>
+                                </div>
+                                <input type="text" name="password" id="password" class="form-control" required>
+                            </div>
+                            <div class="form-group mb-1">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value="beni-hatirla">
+                                        <span class="text-muted">Remember</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <a class="btn btn-primary btn-block" href="#!">Login</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--FORM/-->
+        <!--/MENU-->
+        <div class="row">
+            <div class="col offset-md-4 col-md-4 mt-2">
+                <div class="text-center">
+                    <small><a href="./" class="text-muted">Home</a></small>
+                    <small class="text-muted ml-1 mr-1">|</small>
+                    <small><a href="login.html" class="text-muted">Login</a></small>
+                    <small class="text-muted ml-1 mr-1">|</small>
+                    <small><a href="register.html" class="text-muted">Register</a></small>
+                </div>
+            </div>
+        </div>
+        <!--MENU/-->
+    </div>
+    <!--PAGE/-->
+  
+    <!-- Script file(s). -->
+    <script src="public/libraries/jquery/jquery-3.4.1.min.js"></script>
+    <script src="public/libraries/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="public/scripts/theme.js"></script>
+
+</body>
+
+</html>
